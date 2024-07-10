@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Column Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header class="header">
+            <input type="checkbox" id="navBtn">
+            
+            <div class="portfolio">
+                <h1>ポートフォリオ</h1>
+            </div>
+
+            <!-- ヘッダーロゴ -->
+            <div class="header-inner">
+                <a class="header-logo" href="./index.html">
+                   <img src="images/AROKON.PNG" alt="アロコン＆アロキュウ"><!--width=""  height=""　-->
+                </a>
+                <button class="toggle-menu-button"></button>
+            </div>
+
+                <div class="border-radius"></div>
+
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+
+                <!-- メニュー -->
+                  <nav class="nav_content"> 
+					<ul>
+                        <div class="mokuji">目次</div>
+                        <li class="nav_item"><a href="#1">自己紹介</a></li>
+                        <li class="nav_item"><a href="#2">使用ソフト</a></li>
+                        <li class="nav_item"><a href="#3">作品紹介</a></li>
+                        <li class="nav_item"><a href="#4">これからについて</a></li>
+                        <li class="nav_item"><a href="#5"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--
+        <picture>
+            <source media="(min-width: 640px)" srcset="images/pokeka_temoto.jpg">
+            <img src="pokeka_temoto.jpg" alt="ポケカ手元">
+        </picture>
+        -->
+
+        <main>
+            <br></br>
+            <br></br>
+            <section>
+                <h2>目次</h2>
+                   <br class="content">・自己紹介</br>
+                   <br class="used">・使用ソフト</br>
+                   <br class="introduction">・作品紹介</br>
+                   <br class="hereafter">・これからについて</br>
+                   <br></br>
+                   <br></br>
+            </section>
+
+            <section id="1" class="sec01">
+                <h2 class="center">
+                    <span class="content">自己紹介</span>
+                </h2>
+                <br></br>
+                <h2>安藤貴仁</h2>
+                <br>2017年~2023年　中村学園三陽中学、高等学校卒業</br>
+                <br>2020年から書道部に入部</br>
+                <br>2022年に書道部部長に就任</br>
+                <br>卒業制作を九産大で自己推薦で用い入学</br>
+
+                <!--
+                <br><p class="sq-icon">ポケモン</p></br>
+                <br><p class="ci-icon">たねポケモン</p></br>
+                -->
+                <br></br>
+                <br></br>
+            </section>
+            <div class="card">
+                <img src="images/nyaoha_pokeka.png" style="display: block; margin: auto;">
+            </div>
+
+            <section id="2" class="sec02">
+                <h2 class="center">
+                    <span class="used">使用ソフト</span>
+                </h2>
+                <br></br>
+                <br>・Adob Illustrator</br>
+                <br>・Ibis paint</br>
+                <br>・Visual Studio Code</br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <div class="container">
+                </div>
+            </section>
+
+            <section id="3" class="sec03">
+                <h2 class="center">
+                    <span class="introduction">作品紹介</span>
+                </h2>
+                <br></br>
+                <div class="bxslider">
+                    <div><img src="images/シンボル試作23AS005安藤貴仁.png" title="caption 1">
+                        <br></br>
+                        <h2>タイトル「懐古」</h2>
+                        <br>小学校の校章と昔遊んだゲームのロゴ、公園のタイルを思い出して制作しました。</br>
+                        <br></br>
+                    </div>
+                    <div><img src="images/23AS005安藤貴仁_バナー.jpg" title="caption 2">
+                        <br></br>
+                        <h2>タイトル「Honey Chrisumas」</h2>
+                        <br>デジタルサイネージ制作で作ったバナーです。</br>
+                        <br>Chrismasの「C」を三日月型にしているのがこだわりポイントです。</br>                   
+                    </div>
+                    <div><img src="images/Weather-2.gif" title="caption 3">
+                        <br></br>
+                        <h2>タイトル「晴れのち曇り」</h2>
+                        <br>お天気アイコンの制作で作ったロゴアニメーションです。</br>
+                        <br>晴れと曇りの差をつけるために雲の量を減らしたり、</br>
+                        <br>太陽が出てくる時と登った時で周るスピードが違うのがこだわりポイントです。</br>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            </section>
+
+            <section id="4" class="sec04">
+                <h2 class="center">
+                    <span class="hereafter">これからについて</span>
+                </h2>
+                    <br></br>
+                    <br>・ゲーム作ろうラボでメンバーと共に作品を作る</br>
+                    <br></br>
+                    <br>・web制作をより勉強し、好きなことやポートフォリオ作成に励む</br>
+                    <br></br>
+                    <br>・趣味のイラスト制作をより一層力を入れて制作する</br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+            </section>
+        </main>
+
+        <footer>
+            <p>© My Site </p>
+        </footer>
+        <a href="#" class="pagetop">▲</a>
+    </div>
+</body>
+
+</html>
